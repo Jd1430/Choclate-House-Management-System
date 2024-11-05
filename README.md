@@ -1,4 +1,4 @@
-# Jd1430-Choclate-House-Management-System
+#Choclate-House-Management-System
 A web application to manage inventory, seasonal flavors, and suggestions for a Chocolate House.
 
 Project Structure
