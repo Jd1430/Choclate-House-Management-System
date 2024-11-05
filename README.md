@@ -11,3 +11,10 @@ Features
 Inventory Management: View and manage ingredients in the inventory.
 Seasonal Flavors: Manage and view seasonal flavors.
 Customer Suggestions: View and add customer suggestions for flavors and improvements
+
+How to run the file 
+1.Download Repository local Desktop
+2.Use Python Enivornments:Vscode
+3.run app.py file using command : python app.py
+
+After runing the app.py file ,The app will be accessible at http://127.0.0.1:5000.
