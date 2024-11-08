@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Suggestions</h2>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Flavor Suggestion</th>
+                <th>Allergy Information</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for suggestion in suggestions %}
+                <tr>
+                    <td>{{ suggestion[0] }}</td>
+                    <td>{{ suggestion[1] }}</td>
+                    <td>{{ suggestion[2] }}</td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="3">No suggestions available.</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endblock %}

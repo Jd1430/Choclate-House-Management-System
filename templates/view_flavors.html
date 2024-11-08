@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Seasonal Flavors</h2>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Flavor</th>
+                <th>Available From</th>
+                <th>Available To</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for flavor in flavors %}
+                <tr>
+                    <td>{{ flavor[0] }}</td>
+                    <td>{{ flavor[1] }}</td>
+                    <td>{{ flavor[2] }}</td>
+                    <td>{{ flavor[3] }}</td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="4">No seasonal flavors found.</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
