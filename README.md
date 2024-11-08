@@ -1,4 +1,4 @@
-#Choclate-House-Management-System
+<h1>Choclate-House-Management-System</h1>
 A web application to manage inventory, seasonal flavors, and suggestions for a Chocolate House.
 
 Project Structure
